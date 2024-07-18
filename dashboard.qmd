@@ -1,7 +1,7 @@
 ---
 title: "Lessons Learned From Writing My Dissertation with Quarto"
 author: 
-      name: "Eli Mizrachi (they/them)"
+    - name: "Eli Mizrachi (they/them)"
       orcid: 0000-0001-6047-3588
       affiliation: 
         name: SLAC National Accelerator Laboratory
@@ -9,6 +9,7 @@ bibliography: references.bib
 csl: american-physical-society.csl
 reference-location: block
 format: dashboard
+css: extra.scss
 orientation: columns
 nav-buttons: 
       - icon: gitlab
@@ -43,7 +44,7 @@ include-after-body:
 ### 
 
 ::: {.card title="Good Things"}
-::: {#fig-test-plot}
+::: {#fig-test}
 {{< embed test.ipynb#test-plot >}}
 
 Directly embed outputs from code and/or notebook cells!
@@ -91,7 +92,8 @@ And also inline: $x$
 
 [^1]: Hello, I am a footnote
 
-References?
 
+::: {.card title="References"}
 ::: {#refs}
+:::
 :::

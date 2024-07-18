@@ -1,0 +1,3 @@
+.quarto-dashboard .card figure.quarto-float {
+    align-items: unset; // figures in dashboards use center alginment but it messes with plotly?
+}
