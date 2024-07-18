@@ -13,6 +13,17 @@ orientation: columns
 nav-buttons: 
       - icon: gitlab
         href: https://gitlab.com/
+include-after-body: 
+- text : |
+    <script type="text/javascript">
+    // hack to fix formatting of references; csl-dependent
+    const nodes = document.querySelectorAll('[class*="csl"]');
+
+    for (const node of nodes) {
+      node.classList.remove('html-fill-container');
+      node.classList.remove('html-fill-item');
+      }
+    </script>
 ---
 
 ##  {width="20%"}
