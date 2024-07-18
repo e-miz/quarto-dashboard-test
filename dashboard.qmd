@@ -1,0 +1,86 @@
+---
+title: "Lessons Learned From Writing My Dissertation with Quarto"
+author: 
+      name: "Eli Mizrachi (they/them)"
+      orcid: 0000-0001-6047-3588
+      affiliation: 
+        name: SLAC National Accelerator Laboratory
+bibliography: references.bib
+csl: american-physical-society.csl
+reference-location: block
+format: dashboard
+orientation: columns
+nav-buttons: 
+      - icon: gitlab
+        href: https://gitlab.com/
+---
+
+##  {width="20%"}
+
+::: {.card title="Introduction"}
+-   Reproducibility of analyses is challenging
+-   Documentation should live with analyses
+:::
+
+::: {.card title="About Quarto"}
+-   Scientific documentation package for websites, books, dashboards, slides, and more
+-   Built on Pandoc to render to multiple formats (PDF, HTML, etc.) with different engines (LaTeX, Typst, and more)
+:::
+
+##  {width="80%"}
+
+### 
+
+::: {.card title="Good Things"}
+::: {#fig-test-plot}
+{{< embed test.ipynb#test-plot >}}
+
+Directly embed outputs from code and/or notebook cells!
+:::
+
+-   Git-friendly, works with Docker
+-   Re-use source to render to multiple formats
+-   Cite sources @bach2003 @1933Zwicky @1958MalterEffect @1972RogandSho
+-   Markdown-like syntax
+-   HTML supports interactive content
+-   Zotero Integration
+-   IDE Integration (VSCode, RStudio, *et al.*)
+:::
+
+::: {.card title="Bad Things"}
+-   Bleeding-edge; some features don't work as advertised
+-   No real-time collaboration
+-   Functionality for documenting APIs is limited
+-   No support for `siunitx` in HTML (displaying units)
+-   HTML supports only SVG images
+-   Advanced HTML customization requires CSS
+
+::: {style="align-items: center; justify-content: center"}
+Formatting with CSS
+:::
+:::
+
+### 
+
+::: {.card title="Case Study: My dissertation"}
+World
+
+Here's some math displayed: $$
+y=mx+b
+$$
+
+And also inline: $x$
+
+-   Coping with PDF formatting guidelines [^1]
+-   Source code from disparate repositories
+-   HTML features broke because of pathing for files
+-   Developed CI/CD pipeline to deploy releases
+-   Integrated
+:::
+
+[^1]: Hello, I am a footnote
+
+References?
+
+::: {#refs}
+:::
