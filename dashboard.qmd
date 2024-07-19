@@ -9,7 +9,7 @@ bibliography: references.bib
 csl: american-physical-society.csl
 reference-location: block
 format: dashboard
-css: extra.scss
+css: custom.scss
 orientation: columns
 nav-buttons: 
       - icon: gitlab
@@ -77,7 +77,8 @@ Formatting with CSS
 ::: {.card title="Case Study: My dissertation"}
 World
 
-Here's some math displayed: $$
+Here's some math displayed: 
+$$
 y=mx+b
 $$
 
