@@ -9,7 +9,7 @@ bibliography: references.bib
 csl: american-physical-society.csl
 reference-location: block
 format: dashboard
-theme: custom.scss #
+theme: custom.scss 
 orientation: columns
 nav-buttons: 
       - icon: gitlab
