@@ -1,3 +1,17 @@
+/*-- scss:defaults --*/
+// Colors from
+// https://identity.stanford.edu/design-elements/color/
+$navbar-bg: #820000;
+$navbar-fg: #ffffff;
+
+// Digital Blue
+$link-color: #006CB8;
+
+// Light Fog-ish
+$card-cap-bg: rgba(218, 215, 203, 0.3);
+$code-bg: rgba(218, 215, 203, 0.3);
+/*-- scss:rules --*/
+
 .quarto-dashboard .card figure.quarto-float {
     align-items: unset; // figures in dashboards use center alginment but it messes with plotly?
 }
