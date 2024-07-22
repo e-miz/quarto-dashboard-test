@@ -19,3 +19,7 @@ $card-color: rgb(46, 45, 41);
 .quarto-dashboard .card figure.quarto-float {
     align-items: unset;
 }
+
+.unset-flex .img-fluid {
+    flex: unset;
+}

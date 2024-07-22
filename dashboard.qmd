@@ -39,9 +39,7 @@ include-after-body:
 -   Built on Pandoc to render to multiple formats (PDF, HTML, etc.) with different engines (LaTeX, Typst, and more)
 :::
 
-##  {width="80%"}
-
-### 
+##  {width="40%"}
 
 ::: {.card title="Good Things"}
 ::: {#fig-test}
@@ -72,9 +70,9 @@ Formatting with CSS
 :::
 :::
 
-### 
+##  {width="40%"}
 
-::: {.card title="Case Study: My dissertation"}
+::: {.card title="Case Study: My dissertation" height="51.5%"}
 World
 
 Here's some math displayed: 
@@ -93,8 +91,19 @@ And also inline: $x$
 
 [^1]: Hello, I am a footnote
 
+::: {.card title="Sponsors" height="20%"}
+<!-- Right now these overflow sometimes because of this rule, but unsetting flex seems to fix it...
+.html-fill-container > :not(.html-fill-item) {
+  flex: 0 0 auto; #
+} -->
+::: {.unset-flex layout-ncol="2" style="margin-bottom: 0em;"}
+{{< placeholder 100 50 format=svg >}}
+{{< placeholder 100 50 format=svg >}}
+:::
 
-::: {.card title="References"}
+:::
+
+::: {.card title="References" height="30%"}
 ::: {#refs}
 :::
 :::
