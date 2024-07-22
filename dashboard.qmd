@@ -96,9 +96,15 @@ And also inline: $x$
 .html-fill-container > :not(.html-fill-item) {
   flex: 0 0 auto; #
 } -->
-::: {.unset-flex layout-ncol="2" style="margin-bottom: 0em;"}
+::: {.unset-flex style="display: grid; grid-template-columns: 1fr 1fr; width: 100%;"}
+
+:::{style="grid-column: 1; align-self: center;"}
 {{< placeholder 100 50 format=svg >}}
+:::
+
+::: {style="grid-column: 2; align-self: center;"}
 {{< placeholder 100 50 format=svg >}}
+:::
 :::
 
 :::
